@@ -1,3 +1,4 @@
+
 view: order_items {
   sql_table_name: demo_db.order_items ;;
   drill_fields: [id]
@@ -49,7 +50,8 @@ view: order_items {
     <p>{{rendered_value}}</p>
     {% endif%}
     ;;
-  }
+    }
+
 
   measure: count {
     type: count

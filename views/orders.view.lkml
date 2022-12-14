@@ -1,3 +1,4 @@
+
 view: orders {
   sql_table_name: demo_db.orders ;;
   drill_fields: [id]
@@ -108,5 +109,5 @@ view: orders {
       order_items_vijaya.count,
       ten_million_orders.count
     ]
-  }
+}
 }

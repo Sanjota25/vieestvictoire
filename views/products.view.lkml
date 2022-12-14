@@ -1,3 +1,4 @@
+
 view: products {
   sql_table_name: demo_db.products ;;
   drill_fields: [id]
@@ -58,5 +59,5 @@ view: products {
   measure: count {
     type: count
     drill_fields: [id, item_name, inventory_items.count]
-  }
+}
 }
