@@ -13,6 +13,10 @@ persist_with: liquid_default_datagroup
 
 explore: imgsrc1onerroralert2 {}
 
+explore: pop {}
+
+explore: demo {}
+
 explore: account {}
 
 explore: billion_orders {

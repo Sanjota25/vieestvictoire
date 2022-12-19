@@ -23,6 +23,26 @@ view: orders {
     sql: ${TABLE}.created_at ;;
   }
 
+  filter: filter_on_field_to_hide {
+    type: number
+    sql: {% condition filter_on_field_to_hide %} ${created_year} {% endcondition %} ;;
+  }
+
+  parameter: from_date {
+    type: date_time
+  }
+
+  parameter: start_date_param {
+    label: "Start Date Param"
+    type: date
+  }
+
+  dimension: start_date {
+    type: date
+    sql:{% parameter start_date_param %} ;;
+    convert_tz: no
+  }
+
   dimension: status {
     type: string
     sql: ${TABLE}.status ;;
