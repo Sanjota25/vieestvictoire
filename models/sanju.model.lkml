@@ -109,6 +109,10 @@ explore: orders {
 }
 
 explore: order_items {
+  access_filter: {
+    field: products.brand
+    user_attribute: cedis_filter
+  }
   join: orders {
     type: left_outer
     sql_on: ${order_items.order_id} = ${orders.id} ;;
